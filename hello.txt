@@ -28,5 +28,3 @@ second time.
 
 to commit changes
 >git commit -m"message"
-
-
