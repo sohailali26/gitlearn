@@ -1,2 +1,109 @@
 my name is sohail
 wow git is awosome
+
+PS E:\pepcoding\JAVASCRIPT\git> git init
+Reinitialized existing Git repository in E:/pepcoding/JAVASCRIPT/git/.git/
+PS E:\pepcoding\JAVASCRIPT\git> git add.
+git: 'add.' is not a git command. See 'git --help'.      
+
+The most similar command is
+        add
+PS E:\pepcoding\JAVASCRIPT\git> git add .
+PS E:\pepcoding\JAVASCRIPT\git> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)      
+        new file:   abc.txt
+        modified:   hello.txt
+
+PS E:\pepcoding\JAVASCRIPT\git> git add abc.txt
+PS E:\pepcoding\JAVASCRIPT\git> git status
+On branch master
+        new file:   abc.txt
+        modified:   hello.txt
+
+PS E:\pepcoding\JAVASCRIPT\git> git commit -m"abc created"
+[master 39c2faf] abc created
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+ create mode 100644 abc.txt
+PS E:\pepcoding\JAVASCRIPT\git> git status
+On branch master
+nothing to commit, working tree clean
+PS E:\pepcoding\JAVASCRIPT\git> git log
+commit 39c2faf9d04ee73f9044310efca845bfb094277f (HEAD -> master)
+Author: sohail <sohailali26011999@gmail.com>
+Date:   Tue Aug 17 20:38:53 2021 +0530
+
+    abc created
+
+commit 0fe10c50e57ada0829034c93869a1b8d25d5799c
+Author: sohail <sohailali26011999@gmail.com>
+Date:   Tue Aug 17 20:07:07 2021 +0530
+
+    all commands added
+
+commit c8b667f0c6acbc27268c65f18ab44425da270934
+Author: sohail <sohailali26011999@gmail.com>
+Date:   Tue Aug 17 19:39:04 2021 +0530
+
+    third commit
+
+commit a1ce9fb0f211c054500960d98d9a69022d0a89d6
+Author: sohail <sohailali26011999@gmail.com>
+Date:   Tue Aug 17 19:29:58 2021 +0530
+
+    second time
+
+commit 6674c912236b7e4b33f4b4cbe7dc383a6f6c37f2
+Author: sohail <sohailali26011999@gmail.com>
+Date:   Tue Aug 17 19:27:00 2021 +0530
+
+    added city
+PS E:\pepcoding\JAVASCRIPT\git> git commit -m"before status"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)   
+        modified:   abc.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS E:\pepcoding\JAVASCRIPT\git> git add abc.txt
+PS E:\pepcoding\JAVASCRIPT\git> git commit -m"after stage"
+[master 6746f1d] after stage
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS E:\pepcoding\JAVASCRIPT\git> git log
+commit 6746f1de94a876bd2592c01cea2f54097cc1580a (HEAD -> master)
+Author: sohail <sohailali26011999@gmail.com>
+Date:   Tue Aug 17 21:00:59 2021 +0530
+
+    after stage
+
+commit 39c2faf9d04ee73f9044310efca845bfb094277f
+Author: sohail <sohailali26011999@gmail.com>
+Date:   Tue Aug 17 20:38:53 2021 +0530
+
+    abc created
+
+commit 0fe10c50e57ada0829034c93869a1b8d25d5799c
+Author: sohail <sohailali26011999@gmail.com>
+Date:   Tue Aug 17 20:07:07 2021 +0530
+
+    all commands added
+
+commit c8b667f0c6acbc27268c65f18ab44425da270934
+Author: sohail <sohailali26011999@gmail.com>
+Date:   Tue Aug 17 19:39:04 2021 +0530
+
+    third commit
+
+commit a1ce9fb0f211c054500960d98d9a69022d0a89d6
+Author: sohail <sohailali26011999@gmail.com>
+Date:   Tue Aug 17 19:29:58 2021 +0530
+
+    second time
+
+commit 6674c912236b7e4b33f4b4cbe7dc383a6f6c37f2
+Author: sohail <sohailali26011999@gmail.com>
+Date:   Tue Aug 17 19:27:00 2021 +0530
+
+    added city
